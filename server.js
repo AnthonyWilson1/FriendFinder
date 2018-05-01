@@ -6,7 +6,7 @@ const routes = require('./routing/apiRoutes.js')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
-var PORT = 8080;
+var PORT = process.env.PORT || 8080;
 
 var match
 
